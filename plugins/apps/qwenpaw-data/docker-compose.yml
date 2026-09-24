@@ -107,12 +107,12 @@ services:
       dockerfile: deploy/Dockerfile
     container_name: qwenpaw-data-qwenpaw
     environment:
-      QWENPAW_PORT: "${QWENPAW_PORT:-8088}"
+      QWENPAW_PORT: "${QWENPAW_PORT:-8087}"
       QWENPAW_DATA_CONTEXT_MODE: external
       QWENPAW_DATA_CONTEXT_URL: http://context:8765
       QWENPAW_DATA_CONTEXT_TOKEN: ${QWENPAW_DATA_CONTEXT_TOKEN:-qwenpaw-data-demo-token}
     ports:
-      - "127.0.0.1:${QWENPAW_PORT:-8088}:8088"
+      - "127.0.0.1:${QWENPAW_PORT:-8087}:8087"
     depends_on:
       context:
         condition: service_healthy

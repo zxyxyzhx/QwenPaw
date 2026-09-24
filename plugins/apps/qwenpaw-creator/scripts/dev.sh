@@ -20,7 +20,7 @@
 #   QWENPAW_BIN          qwenpaw executable (default: qwenpaw on PATH)
 #   QWENPAW_PYTHON       Python used by QwenPaw (default: python3 on PATH)
 #   QWENPAW_WORKING_DIR  working dir of the target instance (default ~/.qwenpaw)
-#   QWENPAW_PORT         API port for backend hot reload (default 8088)
+#   QWENPAW_PORT         API port for backend hot reload (default 8087)
 #
 # Why stage instead of installing the plugin dir directly? The dir doubles
 # as the frontend dev workspace: after a build it contains ui/node_modules

@@ -120,12 +120,12 @@ RUN uv pip install --python /app/venv/bin/python \
     --no-cache-dir . "setuptools<82" && rm -rf ./build
 
 
-# QwenPaw app port (default 8088). Override at runtime with -e QWENPAW_PORT=3000.
-ENV QWENPAW_PORT=8088
+# QwenPaw app port (default 8087). Override at runtime with -e QWENPAW_PORT=3000.
+ENV QWENPAW_PORT=8087
 
 COPY deploy/config/supervisord.conf.template /etc/supervisor/conf.d/supervisord.conf.template
 COPY --chmod=755 deploy/entrypoint.sh /entrypoint.sh
 
-EXPOSE 8088
+EXPOSE 8087
 
 CMD ["/entrypoint.sh"]

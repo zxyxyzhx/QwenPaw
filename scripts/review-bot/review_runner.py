@@ -37,7 +37,7 @@ from qwenpaw.agents.tools.agent_management import (  # noqa: E402
 
 # pylint: enable=wrong-import-position
 
-QWENPAW_URL = os.environ.get("QWENPAW_URL", "http://localhost:8088")
+QWENPAW_URL = os.environ.get("QWENPAW_URL", "http://localhost:8087")
 CHAT_ENDPOINT = f"{QWENPAW_URL}/api/console/chat"
 MAX_RETRIES = 5
 TIMEOUT_SECONDS = 300

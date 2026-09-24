@@ -55,7 +55,7 @@ if (typeof importScripts === "function") {
 const bridgeConfig = globalThis.QWENPAW_BRIDGE_CONFIG || {};
 const extensionBuild = bridgeConfig.build || {};
 const LOCAL_QWENPAW_PORTS = new Set([
-  String(Number(bridgeConfig.localPort) || 8088),
+  String(Number(bridgeConfig.localPort) || 8087),
 ]);
 
 let nmPort = null;

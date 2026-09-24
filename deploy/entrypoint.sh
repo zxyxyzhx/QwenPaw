@@ -1,6 +1,6 @@
 #!/bin/sh
 # Substitute QWENPAW_PORT in supervisord template and start supervisord.
-# Default port 8088; override at runtime with -e QWENPAW_PORT=3000.
+# Default port 8087; override at runtime with -e QWENPAW_PORT=3000.
 set -e
 
 is_auth_enabled() {
@@ -43,7 +43,7 @@ else
   echo "✓ Config found in ${QWENPAW_WORKING_DIR}, skipping initialization."
 fi
 
-export QWENPAW_PORT="${QWENPAW_PORT:-8088}"
+export QWENPAW_PORT="${QWENPAW_PORT:-8087}"
 warn_if_auth_off_container_bind
 envsubst '${QWENPAW_PORT}' \
   < /etc/supervisor/conf.d/supervisord.conf.template \

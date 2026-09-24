@@ -53,7 +53,7 @@ CWS_COMING_SOON_MESSAGE = (
     "cws install mode is coming soon and not supported in this "
     "Developer Preview"
 )
-DEFAULT_WS_URL = "ws://127.0.0.1:8088/api/ws/chrome"
+DEFAULT_WS_URL = "ws://127.0.0.1:8087/api/ws/chrome"
 CHROME_EXTENSIONS_URL = "chrome://extensions"
 LOCAL_BRIDGE_CONFIG_JS = "bridge_config.js"
 LOCAL_INITIAL_RECONNECT_BACKOFF_SECONDS = 5

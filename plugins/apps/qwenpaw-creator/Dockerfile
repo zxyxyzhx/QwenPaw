@@ -70,6 +70,6 @@ COPY --chmod=755 plugins/apps/qwenpaw-creator/entrypoint.sh /entrypoint-creator.
 
 # Health check: verify the app is responding on the configured port.
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-  CMD curl -f http://localhost:${QWENPAW_PORT:-8088}/ || exit 1
+  CMD curl -f http://localhost:${QWENPAW_PORT:-8087}/ || exit 1
 
 CMD ["/entrypoint-creator.sh"]

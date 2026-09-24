@@ -25,7 +25,7 @@ PLUGIN_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORKING_DIR = os.path.expanduser(
     os.environ.get("QWENPAW_WORKING_DIR", "~/.qwenpaw"),
 )
-PORT = os.environ.get("QWENPAW_PORT", "8088")
+PORT = os.environ.get("QWENPAW_PORT", "8087")
 INSTALLED_DIR = os.path.join(WORKING_DIR, "plugins", "qwenpaw-creator")
 POLL_SECONDS = 1.0
 

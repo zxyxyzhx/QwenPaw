@@ -65,7 +65,7 @@ else
   echo "✓ Creator plugin not bundled."
 fi
 
-export QWENPAW_PORT="${QWENPAW_PORT:-8088}"
+export QWENPAW_PORT="${QWENPAW_PORT:-8087}"
 warn_if_auth_off_container_bind
 
 envsubst '${QWENPAW_PORT}' \

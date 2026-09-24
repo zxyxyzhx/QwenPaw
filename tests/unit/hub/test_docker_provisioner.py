@@ -43,7 +43,7 @@ class _FakeContainer:
         "Image": "sha256:resolved-image",
         "NetworkSettings": {
             "Ports": {
-                "8088/tcp": [
+                "8087/tcp": [
                     {"HostIp": "127.0.0.1", "HostPort": "32123"},
                 ],
             },
@@ -422,7 +422,7 @@ def test_published_port_rejects_non_loopback_binding() -> None:
         **container.attrs,
         "NetworkSettings": {
             "Ports": {
-                "8088/tcp": [
+                "8087/tcp": [
                     {"HostIp": "0.0.0.0", "HostPort": "32123"},
                 ],
             },

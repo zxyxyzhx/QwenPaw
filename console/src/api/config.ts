@@ -25,7 +25,7 @@ function clearBrowserSessions(): void {
 /**
  * Get the full API URL with /api prefix
  * @param path - API path (e.g., "/models", "/skills")
- * @returns Full API URL (e.g., "http://localhost:8088/api/models" or "/api/models")
+ * @returns Full API URL (e.g., "http://localhost:8087/api/models" or "/api/models")
  */
 export function getApiUrl(path: string): string {
   const base = VITE_API_BASE_URL || "";
@@ -82,5 +82,5 @@ export function getApiPort(): number {
   if (window.location.port) {
     return parseInt(window.location.port, 10);
   }
-  return 8088;
+  return 8087;
 }

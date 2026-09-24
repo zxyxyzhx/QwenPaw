@@ -117,11 +117,11 @@ class TestBaseUrl:
 
     def test_defaults_when_ctx_obj_is_empty(self):
         ctx = click.Context(click.Command("x"), obj={})
-        assert auto_mod._base_url(ctx, None) == "http://127.0.0.1:8088"
+        assert auto_mod._base_url(ctx, None) == "http://127.0.0.1:8087"
 
     def test_defaults_when_ctx_obj_is_none(self):
         ctx = click.Context(click.Command("x"), obj=None)
-        assert auto_mod._base_url(ctx, None) == "http://127.0.0.1:8088"
+        assert auto_mod._base_url(ctx, None) == "http://127.0.0.1:8087"
 
 
 # ── _ensure_daemon_alive ─────────────────────────────────────────────
